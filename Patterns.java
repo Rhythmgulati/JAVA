@@ -302,6 +302,21 @@ public class Patterns {
         }
     }
 
+    static void pattern33(int n) {
+        int chari = 65;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i + 1; j++) {
+                if (chari % 2 != 0) {
+                    System.out.print((char) chari + " ");
+                } else {
+                    System.out.print(Character.toLowerCase((char) chari) + " ");
+                }
+                chari++;
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         pattern1(4);
         System.out.println("---------------------------------------");
@@ -312,6 +327,9 @@ public class Patterns {
         pattern4(5);
         System.out.println("---------------------------------------");
         pattern5(4);
+        System.out.println("---------------------------------------");
+
+        pattern33(5);
 
     }
 
